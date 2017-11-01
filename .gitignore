@@ -1,2 +1,3 @@
-output/*
-model/*
+model/
+.idea/
+output/
