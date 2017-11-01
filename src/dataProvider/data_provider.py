@@ -2,15 +2,15 @@
 import random
 import numpy as np
 
-train_query_path = '../../dataset/train_query.txt'
-train_doc_path = '../../dataset/train_doc.txt'
-train_label_path = '../../dataset/train_label.txt'
-valid_query_path = '../../dataset/valid_query.txt'
-valid_doc_path = '../../dataset/valid_doc.txt'
-valid_label_path = '../../dataset/valid_label.txt'
-test_query_path = '../../dataset/test_query.txt'
-test_doc_path = '../../dataset/test_doc.txt'
-test_label_path = '../../dataset/test_label.txt'
+train_query_path = '../dataset/train_query.txt'
+train_doc_path = '../dataset/train_doc.txt'
+train_label_path = '../dataset/train_label.txt'
+valid_query_path = '../dataset/valid_query.txt'
+valid_doc_path = '../dataset/valid_doc.txt'
+valid_label_path = '../dataset/valid_label.txt'
+test_query_path = '../dataset/test_query.txt'
+test_doc_path = '../dataset/test_doc.txt'
+test_label_path = '../dataset/test_label.txt'
 
 def load_train_dataset():
     return load_dataset(train_query_path, train_doc_path, train_label_path)
@@ -67,7 +67,7 @@ def get_label(filepath):
     return np.asarray(label, dtype=np.int32)
 
 def load_vocab():
-    vocab_path = '../../model/vocab.txt'
+    vocab_path = '../model/vocab.txt'
     vocab = {}
     fr = open(vocab_path)
     index = 0

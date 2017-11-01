@@ -46,7 +46,7 @@ class Model(object):
 
             with tf.name_scope('w2v'):
                 if FLAGS.fine_tune:
-                    self.words = tf.Variable(self.__load_w2v('../../model/vec.txt', FLAGS.embedding_dim), dtype=tf.float32, name='words')
+                    self.words = tf.Variable(self.__load_w2v('../model/vec.txt', FLAGS.embedding_dim), dtype=tf.float32, name='words')
                 else:
                     self.words = tf.Variable(tf.random_uniform([FLAGS.vocab_size, FLAGS.embedding_dim]), dtype=tf.float32, name='words')
 
